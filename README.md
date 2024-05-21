@@ -12,7 +12,7 @@ Terraform module for installing a k3s cluster in the Hetzner cloud
 
 ```hcl
 module "k3s" {
-  source = "github.com/eugene-panin/terraform-hcloud-k3s-cluster"
+  source = "git::https://github.com/eugene-panin/terraform-hcloud-k3s-cluster.git?ref=v0.0.1""
   cluster_configuration = {
     name            = "k3s-cluster"
     k3s_version     = "v1.28.7+k3s1"
